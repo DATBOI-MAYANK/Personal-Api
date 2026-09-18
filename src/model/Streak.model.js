@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const NoFapLogSchema = new mongoose.Schema({
+const StreakSchema = new mongoose.Schema({
   date: {
     type: String,
     required: true,
@@ -14,4 +14,4 @@ const NoFapLogSchema = new mongoose.Schema({
   },
 });
 
-export const NoFap = mongoose.model("NoFapLog", NoFapLogSchema);
+export const Streak = mongoose.model("Streak",StreakSchema);
